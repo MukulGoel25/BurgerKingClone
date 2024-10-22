@@ -1,0 +1,442 @@
+/*CSS laptop/monitor*/
+@media (min-width: 768px){
+	* {
+		margin:  0;
+		padding: 0;
+		font-family: "Nirmala";
+		font-weight: bolder;
+	}
+	a {
+		text-decoration: none;
+		color: #502314;
+	}
+
+	body{
+		font-family: "Nirmala";
+		font-weight: bolder;
+		position:  relative;
+		overflow-x: hidden;
+		background-color: #f5ebdc;
+	}
+	header {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		height: 70px;
+		background-color: #fac073;
+		z-index: 1000;
+		overflow: hidden;
+	}
+	/*Para tds os "ul"*/
+	ul {
+		width: 100%;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	header ul li {
+		font-family: "Georgia";
+		font-weight: bolder;
+		font-size: 1.3rem;
+		color: #502314;
+		cursor: pointer;
+	}
+	header ul li img {
+		margin-top: 2%;
+		margin-left: 40%;
+		width: 100%;
+	}
+	header .circle1{
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background: #e5630d;
+		top: -10px;
+		border-radius: 50%;
+		left: 25%;
+		z-index: -1;
+	}
+	header .ring1{
+		position: absolute;
+		width: 110px;
+		height: 80px;
+		background: none;
+		border: 20px solid #e5630d;
+		top: -55px;
+		border-radius: 50%;
+		left: 45%;
+		z-index: -1;
+	}
+	header .circle2{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background: #e5630d;
+		top: -10px;
+		border-radius: 50%;
+		right: 25%;
+		z-index: -1;
+	}
+	header .circle3{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background: #e5630d;
+		top: 25px;
+		border-radius: 50%;
+		right: 38%;
+		z-index: -1;
+	}
+	
+	/* Style for the burger section */
+#burger_section {
+	position: relative;
+	padding: 20px;
+	background-color:#e5630d;
+	margin-bottom: 0;
+	width: 100%;
+}
+.burgerContainer {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	padding: 10px;
+  }
+  .burgerContainer::-webkit-scrollbar
+  {
+	display: none;
+  }
+  .burgerContainer {
+	scrollbar-width: none;
+  }
+  }
+  .burger-box {
+	flex: 0 0 auto;
+	width: 155px;
+	margin-top: 20px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	scroll-snap-align: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: transform 0 0.2s;
+	background-color: #ffffff;  
+}
+  .burger-box:hover{
+	transform: scale(1.05);
+  }
+  
+  .burger-image {
+	width: 100%;
+	height: 110px;
+	background-color: #ffffff; 
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-bottom: 10px;
+  }
+  
+  .burger-text {
+	font-size: 20px;
+	font-weight: bold;
+  }
+
+/*Banner section*/
+#banners{
+	background-color:#f5ebdc;
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 20px;
+	gap: 20px;
+	margin-top: 0px;
+	overflow: hidden;
+}
+.image-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+.image-container img {
+	width: 350px;
+	height: auto;
+	border-radius:8px;
+	margin-right: 0;
+}
+.ring2{
+	position: absolute;
+		width: 180px;
+		height: 180px;
+		background: none;
+		border: 20px solid #ffffff;
+		top: 1500px;
+		border-radius: 50%;
+		right: -5%;
+		transform: skewX(22deg);
+	}
+.ring3{
+	position: absolute;
+		width: 180px;
+		height: 180px;
+		background: none;
+		border: 20px solid #ffffff;
+		top: 1050px;
+		border-radius: 50%;
+		left: -5%;
+		transform: skewX(28deg);
+	}
+	.circle4 {
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		background: #e6d2b5;
+		border: 20px solid #ffffff;
+		top: 1050px;
+		border-radius: 50%;
+	    right: -5%;
+	}
+
+	/*Resturant Section*/
+	#description_restaurantes{
+		width: 100vw;
+		height: 430px;
+		background-color: #f5ebdc;
+		color: #502314;
+		display: flex;
+		justify-content: center;
+	}
+	#description_restaurantes div {
+		margin-top: 2%;
+		width: 70%;
+		text-align: center;
+	}
+	#description_restaurantes div #title {
+		width: 100%;
+		font-size: 2.5rem;
+	}
+	#description_restaurantes div #description {
+		width: 100%;
+		font-size: 1.3rem;
+	}
+	#description_restaurantes div #input_endereco {
+		width: 100%;
+		height: 45px;
+		border-radius: 4px;
+		border:  1px solid;
+		text-align: center;
+		font-family: "Georgia";
+		font-size: 1.2rem;
+		font-weight: bolder;
+		color: grey;
+		margin-top: 1%;
+	}
+	#description_restaurantes div #article_description{
+		margin-top: 1%;
+		width: 100%;
+		font-size: 0.9rem;
+		font-family: "Calibri";
+		font-weight: none;
+		color: #000;
+	}
+	#description_app{
+		background-color: #f5ebdc;
+		width: 100%;
+		height: 620px;
+		display: flex;
+	}
+	#description_app #s1 {
+		display:  flex;
+		align-items: flex-end;
+		width: 50%;
+		height: 100%;
+	}
+	#description_app #s1 #imgapp {
+        
+		margin-left: 10%;
+	}
+	#description_app #s2 {
+		display:  flex;
+		align-items: flex-start;
+		flex-direction: row;
+		padding-top: 6%;
+		width: 50%;
+	}
+	#description_app #s2 #description_app_label {
+		width: 100%;
+		font-size: 3rem;
+		color: #502314;
+	}
+	/*footer*/
+	footer {
+		width: 100%;
+		height: 450px;
+		background-color: #502314;
+	}
+	footer #container_logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	footer #container_logo #logo_bk {
+		width: 85px;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	footer #container_about {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 1%;
+	}
+	footer #container_about ul {
+		text-align: center;
+		font-family: "Georgia";
+		font-size: 1.2rem;
+		font-weight: bolder;
+		color: #f5ebdc;
+	}
+	footer #container_information {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 1%;
+	}
+	footer #container_information ul {}
+	footer #container_information ul li {
+		text-align: center;
+		font-family: "calibri";
+		font-size: 1.1rem;
+		color: #f5ebdc;
+	}
+	footer hr {
+		margin-top: 3%;
+		margin-left: 15%;
+		color: white;
+		width: 70%;
+	}
+	footer #container_socialMedia {
+		margin-top: 1%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	footer #container_socialMedia label {
+		text-align: center;
+		font-family: "Georgia";
+		font-size: 1.2rem;
+		font-weight: bolder;
+		color: #f5ebdc;
+	}
+	footer #images_socialMedia {
+		margin-top: 1%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	footer #images_socialMedia img {
+		width: 40px;
+		margin-right: 0.2%;
+		margin-left: 0.2%;
+	}
+	footer #container_rights {
+		margin-top: 1%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	footer #container_rights article {
+		text-align: center;
+		font-family: "calibri";
+		font-size: 1.1rem;
+		color: #f5ebdc;
+		font-weight: none;
+	}
+
+	/*general classes*/
+	.buttons {
+		padding: 10px 18px 10px 18px;
+		border:  none;
+		border-radius: 4px;
+		background-color: #D62300;
+		color:  #fff;
+		font-size: 1rem;
+		font-weight: bolder;
+	}
+	.space {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	.spaceButton {
+
+		margin-bottom: 3%;
+	}
+	.images {
+		width: 70%;
+		height: auto;
+		margin-top: 5%;
+		margin-right: 3%;
+	}
+
+/*CSS for Login Page*/
+
+.loginBody {
+    display: flex;
+    height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+	font-size: 18px;
+	outline: none;
+    
+}
+.input-container {
+	position: relative;
+	margin: 20px 0;
+	width: 50%;
+}
+.loginBox {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	width: 50vw;
+	height: 30vw;
+}
+.loginBtn {
+    background-color: #502314; /* Burger King color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	width: 20vw;
+}
+.loginBtn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+#results-div {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
